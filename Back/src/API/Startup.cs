@@ -35,6 +35,7 @@ namespace API
             );
 
             services.AddControllers();
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddCors();
             services.AddSwaggerGen(c =>
             {
